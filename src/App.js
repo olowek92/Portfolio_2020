@@ -78,7 +78,7 @@ const backdropClickHandler = () => {
     return (
       <>
         <Provider store={store}>          
-          <Router>
+          <Router basename={process.env.PUBLIC_URL}>
           <GlobalStyle 
           mobile={homeImageMobile}
           tablet={homeImageTablet}
